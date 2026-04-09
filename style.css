@@ -2,7 +2,7 @@
    HEURISIA STUDIO v3 — Beige × Vert Sauge × Charcoal
    Fond : #EDEADE | Sauge : #4E7A6E | Charcoal : #1C1C1A
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
 :root{
   --beige:#EDEADE; --beige-d:#E2DDD0; --beige-dd:#D4CFC1;
   --white:#FAFAF7;
@@ -10,8 +10,8 @@
   --sage-bg:rgba(78,122,110,0.1); --sage-bg2:rgba(78,122,110,0.06);
   --charcoal:#1C1C1A; --charcoal-m:#2A2A27; --charcoal-s:#363632;
   --text:#2A2926; --text-mid:#5A5752; --text-light:#8A8680;
-  --fd:'Cormorant Garamond',Georgia,serif;
-  --fb:'DM Sans','Helvetica Neue',sans-serif;
+  --fd:'Playfair Display',Georgia,serif;
+  --fb:'Plus Jakarta Sans','Helvetica Neue',sans-serif;
   --nav:72px; --max:1160px; --r:2px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -21,8 +21,8 @@ img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}
 p{max-width:65ch}
-h1,h2,h3,h4{font-family:var(--fd);font-weight:400;line-height:1.1;color:var(--charcoal)}
-h1{font-size:clamp(2.8rem,6vw,5rem);letter-spacing:-0.02em}
+h1,h2,h3,h4{font-family:var(--fd);font-weight:400;line-height:1.1;color:var(--charcoal);font-style:normal}
+h1{font-size:clamp(2.8rem,6vw,5rem);letter-spacing:-0.01em}
 h2{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-0.01em}
 h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 .container{max-width:var(--max);margin:0 auto}
@@ -33,7 +33,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 /* NAV */
 .site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(237,234,222,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--beige-d);transition:box-shadow .3s}
 .site-nav.scrolled{box-shadow:0 2px 20px rgba(28,28,26,0.08)}
-.nav-logo{display:flex;align-items:center;cursor:pointer}
+.nav-logo{display:flex;align-items:center;cursor:pointer;text-decoration:none}
 .nav-logo img{height:32px;width:auto}
 .nav-links{display:flex;align-items:center;gap:2.5rem}
 .nav-links a{font-size:.75rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mid);transition:color .2s;position:relative;cursor:pointer}
@@ -70,7 +70,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 .hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--sage)}
 .hero h1{font-weight:300;margin-bottom:1.8rem;color:var(--charcoal)}
 .hero h1 em{font-style:italic;color:var(--sage)}
-.hero-sub{font-size:.98rem;color:var(--text-mid);max-width:46ch;margin-bottom:2.8rem;line-height:1.75;font-weight:400}
+.hero-sub{font-size:1.05rem;color:var(--text-mid);max-width:48ch;margin-bottom:2.8rem;line-height:1.8;font-weight:400}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
 .hero-right{background:var(--charcoal-m);min-height:480px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-radius:4px}
 .hero-right-letter{font-family:var(--fd);font-size:18rem;color:rgba(78,122,110,0.1);font-style:italic;user-select:none;line-height:1}
@@ -200,6 +200,7 @@ h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
 .copt:hover span{color:rgba(237,234,222,.75)}
 .copt-arr{font-size:1rem;color:var(--sage);transition:transform .3s;margin-left:auto}
 .copt:hover .copt-arr{transform:translateX(4px);color:var(--white)}
+.copt-body{flex:1}
 .zone-box{margin-top:2rem;padding:1.8rem;background:var(--beige-d);border-radius:var(--r)}
 .zone-title{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:.8rem}
 .zone-item{font-size:.87rem;color:var(--text-mid);margin-bottom:.4rem}
